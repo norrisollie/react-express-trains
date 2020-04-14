@@ -1,0 +1,238 @@
+body
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+
+*
+  box-sizing: border-box
+
+.site-wrapper
+  width: 100%
+  height: 100vh
+  display: grid
+  grid-template-rows: 50px min-content 200px
+
+  .section
+    width: 100%
+
+  .section.header
+    background-color: #242424
+    a
+      text-decoration: none
+      .title
+        color: #FFF
+        font-weight: bold
+        font-size: 20px
+        margin: 0 10px
+
+    .nav-wrapper
+      margin-left: auto
+      margin-right: 10px
+      height: 100%
+      display: flex
+      align-items: center
+    a
+      display: flex
+      min-width: 125px
+      color: #FFF
+      font-weight: bold
+      text-decoration: none
+      height: 100%
+      justify-content: center
+      align-items: center
+      &:hover
+        background-color: #3b3b3b
+
+  .section.flex
+    display: flex
+
+  .section.main
+    background-color: #fff
+    min-height: calc(100vh - 50px)
+
+  .section.footer
+    background-color: #242424
+
+  .inner-wrapper
+    display: flex
+    width: 100%
+    height: 100%
+    padding: 50px
+
+  .inner-wrapper.col
+    flex-direction: column
+
+    .title
+      font-size: 150%
+      font-weight: bold
+      margin: 20px 0
+
+  .inner-section
+    width: 100%
+
+  .inner-section.loading-stations
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+
+  .map
+    height: 100%
+
+    .maps
+      width: 100%
+      height: 100%
+
+  .filter-input
+    margin-bottom: 20px
+    input
+      width: 100%
+      padding: 10px
+      border-radius: 5px
+      outline: none
+      border: 1px solid #eee
+      font-size: 20px
+      &:focus
+        border: 1px solid #bbb
+
+  .filtered-stations
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 10px 50px
+
+    .station-card
+      display: flex
+      align-items: center
+      padding: 10px
+      background-color: #eee
+      border-radius: 5px
+      & .nr-logo
+        height: 15px
+        width: 24px
+        margin-right: 10px
+        background-image: url(/assets/nr-logo.svg)
+        background-size: contain
+
+  // .wrapper
+//   width: 100%
+//   height: 100%
+
+// .site-wrapper
+//   position: absolute
+//   top: 0
+//   left: 0
+//   width: 100vw
+//   min-height: 100vh
+//   background-color: #fff
+//   .section
+//     width: 100%
+//   .section.flex
+//     display: flex
+//   .section.flex.column
+//     flex-direction: column
+//   .section.flex.va
+//     align-items: center
+
+//   .section.header
+//     height: 50px
+//     background-color: #242424
+
+//   .section.header
+
+  //  .nav-wrapper
+  //   margin-left: auto
+  //   margin-right: 10px
+  //   height: 100%
+  //   display: flex
+  //   align-items: center
+  //   a
+  //     display: flex
+  //     min-width: 125px
+  //     color: #FFF
+  //     font-weight: bold
+  //     text-decoration: none
+  //     height: 100%
+  //     justify-content: center
+  //     align-items: center
+  //     &:hover
+  //       background-color: #3b3b3b
+
+//   .section.content
+//     height: calc(100vh - 50px)
+//     min-height: calc(100vh - 50px)
+//     width: 100%
+//     padding: 50px
+//     box-sizing: border-box
+//     position: relative
+//   .section.footer
+//     height: 200px
+//     background-color: #242424
+
+  // .header a
+  //   text-decoration: none
+  //   .title
+  //     color: #FFF
+  //     font-weight: bold
+  //     font-size: 20px
+  //     margin: 0 10px
+
+// .station-card
+  // padding: 10px 20px
+  // background-color: #eee
+  // border-radius: 5px
+
+// .loading-wrapper
+//   grid-column: span 2
+//   text-align: center
+
+//   & div:first-child
+//     margin-bottom: 10px
+
+// .list-wrapper
+//   margin: 0 auto
+//   width: 70%
+
+//   .filter-wrapper
+//     grid-column: span 2
+//     .filter
+//       width: 100%
+      // box-sizing: border-box
+      // padding: 10px
+      // border-radius: 5px
+      // outline: none
+      // border: 1px solid #eee
+      // font-size: 20px
+
+// .station-card
+//   padding: 10px 20px
+//   background-color: #eee
+//   border-radius: 5px
+//   display: flex
+//   align-items: center
+
+//   & .nr-logo
+//     height: 15px
+//     width: 24px
+//     margin-right: 10px
+//     background-image: url(/assets/nr-logo.svg)
+//     background-size: contain
+
+// .list-search-wrapper
+//   margin-bottom: 20px
+
+// .filtered-wrapper
+//   display: grid
+//   grid-template-columns: 1fr 1fr
+//   grid-gap: 15px 50px
+
+//   .wrapper
+//     width: 100%
+
+// .maps
+//   width: 100%
+//   height: 100%
