@@ -13,7 +13,13 @@ import { getSession } from "./auth";
 const Root = () => (
   <Router>
     <Switch>
-      <Route path="/login" exact component={Login} />
+      <Route
+        path="/login"
+        exact
+        render={() =>
+          getSession() ? <Redirect from="/login" to="/" exact /> : <Login />
+        }
+      />
       <Route
         path="/"
         render={() =>
