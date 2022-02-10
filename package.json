@@ -15,7 +15,7 @@
     "js-cookie": "^2.2.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.6",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react-transition-group": "^4.3.0",
     "validation": "^0.0.1"
   },
